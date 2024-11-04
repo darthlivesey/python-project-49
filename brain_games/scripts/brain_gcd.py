@@ -1,30 +1,18 @@
-from random import randint, choice
+from random import randint
+from math import gcd
 from brain_games.scripts import brain_games_main
 
 
 def main():
     name = brain_games_main.main()
-    print('What is the result of the expression?')
+    print('Find the greatest common divisor of given numbers.')
     wins = 0
-    symbols_list = ['+', '-', '*']
 
     while wins != 3:
-        operation = choice(symbols_list)
         first_number = randint(1, 100)
-
-        if operation == '-':
-            second_number = randint(1, 99)
-            while second_number > first_number:
-                second_number = randint(1, 99)
-            answer = first_number - second_number
-        elif operation == '+':
-            second_number = randint(1, 100)
-            answer = first_number + second_number
-        elif operation == '*':
-            second_number = randint(1, 20)
-            answer = first_number * second_number
-
-        print(f'Question: {first_number} {operation} {second_number}')
+        second_number = randint(1, 100)
+        answer = gcd(first_number, second_number)
+        print(f'Question: {first_number} {second_number}')
 
         try:
             ans = input('Your answer: ')
