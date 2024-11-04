@@ -4,7 +4,8 @@ from brain_games.scripts.game_logic import start_text, check_logic
 
 
 def main():
-    name, wins = start_text('Find the greatest common divisor of given numbers.')
+    text = 'Find the greatest common divisor of given numbers.'
+    name, wins = start_text(text)
 
     while wins != 3:
         first_number = randint(1, 100)

@@ -3,7 +3,8 @@ from brain_games.scripts.game_logic import start_text, check_logic
 
 
 def main():
-    name, wins = start_text('What number is missing in the progression?')
+    text = 'What number is missing in the progression?'
+    name, wins = start_text(text)
 
     while wins != 3:
         number = randint(1, 20)
@@ -25,5 +26,5 @@ def main():
             return
         else:
             wins += 1
-            
+
     print(f'Congratulations, {name}!')

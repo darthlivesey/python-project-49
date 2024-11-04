@@ -2,9 +2,10 @@ from brain_games.scripts import brain_games_main
 
 
 def start_text(text):
-    name = brain_games_main.main(), 0
+    name = brain_games_main.main()
     print(text)
-    return name
+    return name, 0
+
 
 def check_logic(answer, name):
     try:

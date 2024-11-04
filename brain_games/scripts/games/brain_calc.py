@@ -3,7 +3,8 @@ from brain_games.scripts.game_logic import start_text, check_logic
 
 
 def main():
-    name, wins = start_text('What is the result of the expression?')
+    text = 'What is the result of the expression?'
+    name, wins = start_text(text)
     symbols_list = ['+', '-', '*']
 
     while wins != 3:

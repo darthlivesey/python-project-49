@@ -3,7 +3,8 @@ from brain_games.scripts.game_logic import start_text
 
 
 def main():
-    name, wins = start_text('Answer "yes" if the number is even, otherwise answer "no".')
+    text = 'Answer "yes" if the number is even, otherwise answer "no".'
+    name, wins = start_text(text)
 
     while wins != 3:
         question_number = randint(1, 100)
