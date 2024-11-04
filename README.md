@@ -3,16 +3,20 @@
 
 
 ### Brain-even game demo
-https://asciinema.org/a/yKdOxYuuqDlEsPWuwOFCOSI1e
+https://asciinema.org/a/h53wZV2fXJJbKwI9CS004CAgA
 
 
 ### Brain-calc game demo
-https://asciinema.org/a/AIyGZGgrZV9q4TG3Id10CIjLM
+https://asciinema.org/a/YN4y0cHc0RBd5QsgpmmIvsYK6
 
 
 ### Brain-gcd game demo
-https://asciinema.org/a/NSo4PdHSr8sqg9wKSgJBthrQX
+https://asciinema.org/a/IT3MXNBv6pTbnAuiOveGqWWpU
 
 
 ### Brain-progression game demo
 https://asciinema.org/a/ZxsRC6m5xIWpo3748thHXCMuP
+
+
+### Brain-prime game demo
+https://asciinema.org/a/zXFz61fZSO2IFyHzXDTN5qnpp
