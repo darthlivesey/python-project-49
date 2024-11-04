@@ -1,11 +1,9 @@
 from random import randint, choice
-from brain_games.scripts import brain_games_main
+from brain_games.scripts.game_logic import start_text, check_logic
 
 
 def main():
-    name = brain_games_main.main()
-    print('What is the result of the expression?')
-    wins = 0
+    name, wins = start_text('What is the result of the expression?')
     symbols_list = ['+', '-', '*']
 
     while wins != 3:
@@ -26,20 +24,9 @@ def main():
 
         print(f'Question: {first_number} {operation} {second_number}')
 
-        try:
-            ans = input('Your answer: ')
-            int_user_answer = int(ans)
-        except ValueError:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{answer}'")
-            print(f"Let's try again, {name}!")
+        if not check_logic(answer, name):
             return
-
-        if int_user_answer == answer:
-            print('Correct!')
-            wins += 1
         else:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{answer}'")
-            print(f"Let's try again, {name}!")
-            return
+            wins += 1
 
     print(f'Congratulations, {name}!')

@@ -1,11 +1,9 @@
 from random import randint
-from brain_games.scripts import brain_games_main
+from brain_games.scripts.game_logic import start_text
 
 
 def main():
-    name = brain_games_main.main()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    wins = 0
+    name, wins = start_text('Answer "yes" if the number is even, otherwise answer "no".')
 
     while wins != 3:
         question_number = randint(1, 100)
