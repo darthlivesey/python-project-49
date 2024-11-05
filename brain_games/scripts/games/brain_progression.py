@@ -19,8 +19,9 @@ def main():
         answer_index = progression.index(choice(progression))
         answer = progression[answer_index]
         progression[answer_index] = '..'
+        progression = [str(value) for value in progression]
 
-        print(f'Question: {progression}')
+        print(f"Question: {' '.join(progression)}")
 
         if not check_logic(answer, name):
             return
@@ -28,3 +29,5 @@ def main():
             wins += 1
 
     print(f'Congratulations, {name}!')
+
+main()
