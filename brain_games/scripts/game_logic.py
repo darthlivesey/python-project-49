@@ -1,8 +1,8 @@
-from brain_games.scripts import brain_games_main
+from brain_games.scripts.brain_games import main
 
 
 def start_text(text):
-    name = brain_games_main.main()
+    name = main()
     print(text)
     return name, 0
 

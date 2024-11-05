@@ -12,7 +12,7 @@ def main():
         ans = input('Your answer: ')
         condition_1 = question_number % 2 == 0 and ans == 'yes'
         condition_2 = question_number % 2 != 0 and ans == 'no'
-        
+
         if condition_1 or condition_2:
             print('Correct!')
             wins += 1
