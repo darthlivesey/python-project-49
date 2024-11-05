@@ -10,7 +10,7 @@ def main():
         number = randint(2, 100)
         counter = 0
         print(f'Question: {number}')
-        for i in range(2, number // 2):
+        for i in range(2, (number // 2) + 1):
             if number % i == 0:
                 counter += 1
 
