@@ -11,17 +11,7 @@ def main():
         operation = choice(symbols_list)
         first_number = randint(1, 100)
 
-        if operation == '-':
-            second_number = randint(1, 99)
-            while second_number > first_number:
-                second_number = randint(1, 99)
-            answer = first_number - second_number
-        elif operation == '+':
-            second_number = randint(1, 100)
-            answer = first_number + second_number
-        elif operation == '*':
-            second_number = randint(1, 20)
-            answer = first_number * second_number
+        answer, second_number = checking_block(operation, first_number)
 
         print(f'Question: {first_number} {operation} {second_number}')
 
@@ -31,3 +21,18 @@ def main():
             wins += 1
 
     print(f'Congratulations, {name}!')
+
+
+def checking_block(operation, first_number):
+    if operation == '-':
+        second_number = randint(1, 99)
+        while second_number > first_number:
+            second_number = randint(1, 99)
+        answer = first_number - second_number
+    elif operation == '+':
+        second_number = randint(1, 100)
+        answer = first_number + second_number
+    elif operation == '*':
+        second_number = randint(1, 20)
+        answer = first_number * second_number
+    return answer, second_number
