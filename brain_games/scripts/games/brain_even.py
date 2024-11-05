@@ -19,7 +19,7 @@ def main():
         else:
             _ = 'yes' if question_number % 2 == 0 else 'no'
             print(f"'{ans}' is wrong answer ;(. Correct answer was '{_}'")
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             return
 
     print(f'Congratulations, {name}!')
