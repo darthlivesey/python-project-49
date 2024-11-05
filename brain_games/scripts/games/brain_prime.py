@@ -26,7 +26,7 @@ def main():
             wins += 1
         else:
             print(f"'{us_ans}' is wrong answer ;(. Correct answer was '{ans}'")
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             return
 
     print(f'Congratulations, {name}!')
