@@ -1,8 +1,9 @@
-from brain_games.scripts.brain_games import main
+from brain_games.cli import welcome_user
 
 
 def start_text(text):
-    name = main()
+    print("Welcome to the Brain Games!")
+    name = welcome_user()
     print(text)
     return name, 0
 
