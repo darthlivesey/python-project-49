@@ -29,5 +29,3 @@ def main():
             wins += 1
 
     print(f'Congratulations, {name}!')
-
-main()
