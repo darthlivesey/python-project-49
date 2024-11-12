@@ -17,6 +17,7 @@ def game_cycle(text, function):
         else:
             print(f"'{ua}' is wrong answer ;(. Correct answer was '{a}'")
             print(f"Let's try again, {name}!")
-            return
+            break
 
-    print(f'Congratulations, {name}!')
+    else:
+        print(f'Congratulations, {name}!')
