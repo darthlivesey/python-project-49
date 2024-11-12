@@ -13,7 +13,7 @@ def game_cycle(text, function):
         ua = input('Your answer: ')
         if str(ua) == str(a):
             print('Correct!')
-        
+
         else:
             print(f"'{ua}' is wrong answer ;(. Correct answer was '{a}'")
             print(f"Let's try again, {name}!")
