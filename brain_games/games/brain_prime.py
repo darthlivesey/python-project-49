@@ -1,10 +1,10 @@
 from random import randint
-from brain_games.scripts.game_logic import game_cycle
+from brain_games.game_logic import game_cycle
 
 
 def main():
     text = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    game_cycle(text, brain_prime_logic, 1)
+    game_cycle(text, brain_prime_logic)
 
 
 def brain_prime_logic():

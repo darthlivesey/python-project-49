@@ -1,6 +1,6 @@
 from random import randint
 from math import gcd
-from brain_games.scripts.game_logic import game_cycle
+from brain_games.game_logic import game_cycle
 
 
 def main():
@@ -12,5 +12,5 @@ def brain_gcd_logic():
     first_number = randint(1, 100)
     second_number = randint(1, 100)
     answer = gcd(first_number, second_number)
-    print(f'Question: {first_number} {second_number}')
-    return answer
+    question_string = f'Question: {first_number} {second_number}'
+    return answer, question_string

@@ -1,5 +1,5 @@
 from random import randint, choice
-from brain_games.scripts.game_logic import game_cycle
+from brain_games.game_logic import game_cycle
 
 
 def main():
@@ -22,5 +22,5 @@ def brain_progression_logic():
     progression[answer_index] = '..'
     progression = [str(value) for value in progression]
 
-    print(f"Question: {' '.join(progression)}")
-    return answer
+    question_string = f"Question: {' '.join(progression)}"
+    return answer, question_string
