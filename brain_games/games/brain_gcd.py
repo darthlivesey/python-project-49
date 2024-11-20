@@ -12,5 +12,5 @@ def brain_gcd_logic():
     first_number = randint(1, 100)
     second_number = randint(1, 100)
     answer = gcd(first_number, second_number)
-    question_string = f'Question: {first_number} {second_number}'
-    return answer, question_string
+    question = f'{first_number} {second_number}'
+    return answer, question

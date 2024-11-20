@@ -8,14 +8,15 @@ def game_cycle(text, function):
     print(text)
 
     for _ in range(3):
-        a, question = function()
+        answer, question = function()
         print(f'Question: {question}')
-        ua = input('Your answer: ')
-        if str(ua) == str(a):
+        user_answer = input('Your answer: ')
+        if str(user_answer) == str(answer):
             print('Correct!')
 
         else:
-            print(f"'{ua}' is wrong answer ;(. Correct answer was '{a}'")
+            print(f"'{user_answer}' is wrong answer ;(.\
+Correct answer was '{answer}'")
             print(f"Let's try again, {name}!")
             break
 

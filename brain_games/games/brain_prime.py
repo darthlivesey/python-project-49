@@ -9,6 +9,10 @@ def main():
 
 def brain_prime_logic():
     question_number = randint(2, 100)
+    return is_prime(question_number), question_number
+
+
+def is_prime(question_number):
     counter = 0
 
     for i in range(2, (question_number // 2) + 1):
@@ -20,4 +24,4 @@ def brain_prime_logic():
     else:
         answer = 'no'
 
-    return answer, question_number
+    return answer

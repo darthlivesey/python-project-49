@@ -22,5 +22,5 @@ def brain_progression_logic():
     progression[answer_index] = '..'
     progression = [str(value) for value in progression]
 
-    question_string = f"Question: {' '.join(progression)}"
-    return answer, question_string
+    question = ' '.join(progression)
+    return answer, question
