@@ -1,3 +1,6 @@
-from brain_games.games.brain_calc import main
+from brain_games.games.brain_calc import brain_calc_logic, TEXT
+from brain_games.game_logic import game_cycle
 
-main()
+
+def main():
+    game_cycle(TEXT, brain_calc_logic)

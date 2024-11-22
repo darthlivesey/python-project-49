@@ -1,10 +1,7 @@
 from random import randint
-from brain_games.game_logic import game_cycle
 
 
-def main():
-    text = 'Answer "yes" if the number is even, otherwise answer "no".'
-    game_cycle(text, brain_even_logic)
+TEXT = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def brain_even_logic():

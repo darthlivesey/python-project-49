@@ -1,10 +1,7 @@
 from random import randint, choice
-from brain_games.game_logic import game_cycle
 
 
-def main():
-    text = 'What number is missing in the progression?'
-    game_cycle(text, brain_progression_logic)
+TEXT = 'What number is missing in the progression?'
 
 
 def brain_progression_logic():

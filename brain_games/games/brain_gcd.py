@@ -1,11 +1,8 @@
 from random import randint
 from math import gcd
-from brain_games.game_logic import game_cycle
 
 
-def main():
-    text = 'Find the greatest common divisor of given numbers.'
-    game_cycle(text, brain_gcd_logic)
+TEXT = 'Find the greatest common divisor of given numbers.'
 
 
 def brain_gcd_logic():
