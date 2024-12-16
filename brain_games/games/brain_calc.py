@@ -1,10 +1,10 @@
 from random import randint, choice
 
 
-TEXT = 'What is the result of the expression?'
+GAME_DESCRIPTION = 'What is the result of the expression?'
 
 
-def brain_calc_logic():
+def main():
     operation = choice(['+', '-', '*'])
     first_number = randint(1, 100)
     second_number = randint(1, 100)

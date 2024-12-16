@@ -1,14 +1,15 @@
 import prompt
 
 
-def game_cycle(text, function):
+def game_cycle(game_module):
+    WINS = 3
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    print(text)
+    print(game_module.GAME_DESCRIPTION)
 
-    for _ in range(3):
-        answer, question = function()
+    for _ in range(WINS):
+        answer, question = game_module.main()
         print(f'Question: {question}')
         user_answer = input('Your answer: ')
         if str(user_answer) == str(answer):

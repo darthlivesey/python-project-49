@@ -1,12 +1,14 @@
 from random import randint
 
 
-TEXT = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
+Otherwise answer "no".'
 
 
-def brain_prime_logic():
+def main():
     question_number = randint(2, 100)
-    return is_prime(question_number), question_number
+    answer = 'yes' if is_prime(question_number) else 'no'
+    return answer, question_number
 
 
 def is_prime(question_number):
@@ -17,8 +19,6 @@ def is_prime(question_number):
             counter += 1
 
     if counter == 0 or question_number == 2:
-        answer = 'yes'
+        return True
     else:
-        answer = 'no'
-
-    return answer
+        return False

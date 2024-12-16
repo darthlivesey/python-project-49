@@ -1,20 +1,16 @@
-from random import randint, choice
+from random import randint
 
 
-TEXT = 'What number is missing in the progression?'
+GAME_DESCRIPTION = 'What number is missing\
+ in the progression?'
 
 
-def brain_progression_logic():
-    number = randint(1, 20)
-    progression_len = randint(5, 15)
+def main():
+    start = randint(0, 20)
     modifier = randint(1, 10)
-    progression = []
-
-    for _ in range(progression_len):
-        progression.append(number)
-        number += modifier
-
-    answer_index = progression.index(choice(progression))
+    stop = randint(start + modifier * 5, start + modifier * 10)
+    progression = list(range(start, stop, modifier))
+    answer_index = randint(0, len(progression) - 1)
     answer = progression[answer_index]
     progression[answer_index] = '..'
     progression = [str(value) for value in progression]
