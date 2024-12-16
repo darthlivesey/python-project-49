@@ -1,9 +1,6 @@
 from random import randint, choice
 
 
-GAME_DESCRIPTION = 'What is the result of the expression?'
-
-
 def main():
     operation = choice(['+', '-', '*'])
     first_number = randint(1, 100)
@@ -18,3 +15,6 @@ def main():
 
     question = f'{first_number} {operation} {second_number}'
     return answer, question
+
+
+GAME_DESCRIPTION = 'What is the result of the expression?'

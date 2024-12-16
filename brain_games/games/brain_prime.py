@@ -1,10 +1,6 @@
 from random import randint
 
 
-GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
- Otherwise answer "no".'
-
-
 def main():
     question_number = randint(2, 100)
     answer = 'yes' if is_prime(question_number) else 'no'
@@ -22,3 +18,7 @@ def is_prime(question_number):
         return True
     else:
         return False
+
+
+GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
+ Otherwise answer "no".'
