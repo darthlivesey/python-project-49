@@ -1,6 +1,5 @@
 import prompt
 
-
 WINS = 3
 
 
