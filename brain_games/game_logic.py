@@ -1,8 +1,10 @@
 import prompt
 
 
+WINS = 3
+
+
 def game_cycle(game_module):
-    WINS = 3
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")

@@ -1,6 +1,10 @@
 from random import randint
 
 
+GAME_DESCRIPTION = 'What number is missing\
+ in the progression?'
+
+
 def main():
     start = randint(0, 20)
     modifier = randint(1, 10)
@@ -13,7 +17,3 @@ def main():
 
     question = ' '.join(progression)
     return answer, question
-
-
-GAME_DESCRIPTION = 'What number is missing\
- in the progression?'
