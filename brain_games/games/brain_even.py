@@ -1,6 +1,5 @@
 from random import randint
 
-
 GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 

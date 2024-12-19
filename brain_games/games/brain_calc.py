@@ -1,6 +1,5 @@
 from random import choice, randint
 
-
 GAME_DESCRIPTION = 'What is the result of the expression?'
 
 

@@ -1,7 +1,6 @@
 from math import gcd
 from random import randint
 
-
 GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
