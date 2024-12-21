@@ -4,7 +4,7 @@ GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
  Otherwise answer "no".'
 
 
-def main():
+def generate_game_data():
     number = randint(2, 100)
     answer = 'yes' if is_prime(number) else 'no'
     return answer, number

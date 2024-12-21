@@ -3,7 +3,7 @@ from random import choice, randint
 GAME_DESCRIPTION = 'What is the result of the expression?'
 
 
-def main():
+def generate_game_data():
     operation = choice(['+', '-', '*'])
     first_number = randint(1, 100)
     second_number = randint(1, 100)

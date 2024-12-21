@@ -4,7 +4,7 @@ GAME_DESCRIPTION = 'What number is missing\
  in the progression?'
 
 
-def main():
+def generate_game_data():
     start = randint(0, 20)
     modifier = randint(1, 10)
     stop = randint(start + modifier * 5, start + modifier * 10)
